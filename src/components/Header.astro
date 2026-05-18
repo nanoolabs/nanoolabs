@@ -8,8 +8,13 @@ import { ICONS } from "@lib/icons";
 <header transition:persist>
   <div class="nav-container">
     <Link href="/" underline={false}>
-      <div class="font-semibold text-black dark:text-white">
-        {SITE.TITLE}
+      <div class="flex items-center gap-2">
+        <div class="size-8 text-black dark:text-white">
+          <Fragment set:html={ICONS.LOGO} />
+        </div>
+        <div class="font-semibold text-black dark:text-white">
+          {SITE.TITLE}
+        </div>
       </div>
     </Link>
 
